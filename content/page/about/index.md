@@ -18,8 +18,6 @@ comments: false
 
 本站使用 Hugo 和 Stack 主题，托管于 GitHub Pages。
 
-目前保留了四篇示例文章，方便查看排版、代码和数学公式的效果。
-
 ## 联系我
 
 - GitHub：[spinning888](https://github.com/spinning888)

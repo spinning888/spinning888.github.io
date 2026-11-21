@@ -2,7 +2,7 @@
 
 线上地址：https://spinning888.github.io/
 
-从导出的“个人学习网站搭建”记录恢复暖色版本，保留四篇示例文章；头像以同配色 SVG 重建。
+从导出的“个人学习网站搭建”记录恢复暖色版本，头像以同配色 SVG 重建。
 
 基于 [Hugo](https://gohugo.io/) 和 [Stack 主题](https://github.com/CaiJimmy/hugo-theme-stack) 的个人学习博客。不需要服务器和后端，托管在 GitHub Pages 上，完全免费。
 
@@ -102,11 +102,7 @@ tags:
 正文从这里开始……
 ```
 
-更多写法（图片、代码、数学公式、提示框）见网站上的《写作指南》这篇文章（`content/post/how-to-write/index.md`）。
-
-> 💡 **不想用命令行？** 可以直接在 GitHub 网页上进入 `content/post/`，点 **Add file → Create new file**，文件名写 `my-note/index.md`，写好后点 **Commit changes**，网站就会自动更新。
-
-示例文章看完可以直接删掉对应的文件夹。
+> 💡 **不想用命令行？** 可以直接在 GitHub 网页上在仓库根目录点 **Add file → Create new file**，文件名写 `content/post/my-note/index.md`，写好后点 **Commit changes**，网站就会自动更新。
 
 ---
 
@@ -149,4 +145,3 @@ hugo server
 
 - 主题：[Hugo Theme Stack](https://github.com/CaiJimmy/hugo-theme-stack)，作者 Jimmy Cai（GPL-3.0）
 - 起始模板：[hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter)（MIT）
-- 示例封面图来自 [Unsplash](https://unsplash.com/)
