@@ -1,0 +1,17 @@
+# 左侧边栏头像下方的社交链接（图标在主题的 assets/icons 里，可用：brand-github、brand-twitter、link、rss、user 等）
+# 不需要的整段删掉即可
+[[social]]
+    identifier = "github"
+    name       = "GitHub"
+    url        = "https://github.com/spinning888"
+
+    [social.params]
+        icon = "brand-github"
+
+[[social]]
+    identifier = "rss"
+    name       = "RSS 订阅"
+    url        = "/index.xml"
+
+    [social.params]
+        icon = "rss"

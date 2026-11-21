@@ -1,0 +1,17 @@
+# 网站地址：部署到 GitHub Pages 时会被自动替换，这里只影响本地预览，可以不改
+baseurl = "https://spinning888.github.io/"
+locale  = "zh-cn"
+title   = "我的学习笔记"
+
+# 主题语言：简体中文
+defaultContentLanguage = "zh"
+
+# 中文网站需要设为 true，这样字数统计和摘要才准确
+hasCJKLanguage = true
+
+# 页脚 © 后面显示的名字
+copyright = "Shen Xie"
+
+[pagination]
+    # 首页每页显示几篇文章
+    pagerSize = 8

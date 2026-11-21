@@ -1,0 +1,3 @@
+# 文章网址格式：/p/文章的 slug/
+post = "/p/:slug/"
+page = "/:slug/"

@@ -1,0 +1,23 @@
+{{- /* 页脚：本站已上线 X 天 · 共 N 篇文章 · 约 X 字 */ -}}
+{{- $posts := where .Site.RegularPages "Section" "in" .Site.Params.mainSections -}}
+{{- $words := 0 -}}
+{{- range $posts -}}{{- $words = add $words .WordCount -}}{{- end -}}
+<div id="site-stats-data" hidden
+     data-posts="{{ len $posts }}"
+     data-words="{{ $words }}"
+     data-start="{{ default "2026-01-01" .Site.Params.footer.startDate }}"></div>
+<script>
+(function () {
+    var d = document.getElementById('site-stats-data');
+    var footer = document.querySelector('.site-footer');
+    if (!d || !footer || document.querySelector('.site-stats')) return;
+    var start = new Date(d.getAttribute('data-start') + 'T00:00:00');
+    var days = Math.max(1, Math.floor((Date.now() - start.getTime()) / 86400000) + 1);
+    var words = parseInt(d.getAttribute('data-words'), 10) || 0;
+    var wordsText = words >= 10000 ? (words / 10000).toFixed(1) + ' 万' : words;
+    var el = document.createElement('section');
+    el.className = 'site-stats';
+    el.textContent = '本站已上线 ' + days + ' 天 · 共 ' + d.getAttribute('data-posts') + ' 篇文章 · 约 ' + wordsText + ' 字';
+    footer.insertBefore(el, footer.firstChild);
+})();
+</script>

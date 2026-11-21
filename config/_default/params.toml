@@ -1,0 +1,80 @@
+# 放在这些目录下的文章会显示在首页和归档页
+mainSections   = ["post"]
+rssFullContent = true
+favicon        = "img/favicon.svg"
+
+# 排序方式："default" 按发布日期，"lastmod" 按最后修改时间
+SortBy = "default"
+
+[footer]
+    # 建站年份，页脚会显示 “© 2026 - 今年”
+    since      = 2026
+    # 建站日期，用于计算“本站已稳定运行 X 天”
+    startDate  = "2026-11-21"
+    customText = ""
+
+[dateFormat]
+    published   = ":date_long"
+    lastUpdated = ":date_long"
+
+# 左侧边栏：头像、名字旁边的表情、个性签名
+[sidebar]
+    emoji    = "📚"
+    subtitle = "记录每天学到的东西，慢慢积累。"
+    avatar   = "img/avatar.svg"
+
+[article]
+    headingAnchor = false
+    # 数学公式：建议在需要的文章里单独写 math: true，这里保持 false
+    math          = false
+    toc           = true
+    readingTime   = true
+
+    [article.list]
+        # 首页文章卡片上显示标签
+        showTags = true
+
+    [article.license]
+        enabled = true
+        default = "本文采用 CC BY-NC-SA 4.0 许可协议，转载请注明出处"
+
+# 右侧边栏小组件
+[widgets]
+    homepage = [
+        { type = "search" },
+        { type = "archives", params = { limit = 5 } },
+        { type = "categories", params = { limit = 10 } },
+        { type = "tag-cloud", params = { limit = 20 } },
+    ]
+    # 文章页右侧显示目录
+    page = [{ type = "toc" }]
+
+[opengraph.twitter]
+    site = ""
+    card = "summary_large_image"
+
+# 深色模式：显示切换按钮，默认跟随系统
+[colorScheme]
+    toggle  = true
+    default = "auto"
+
+# 评论区：默认关闭。想开启可以用 giscus（基于 GitHub Discussions，免费），
+# 配置方法见 README.md
+[comments]
+    enabled  = false
+    provider = "giscus"
+
+    [comments.giscus]
+        repo             = ""
+        repoID           = ""
+        category         = ""
+        categoryID       = ""
+        mapping          = "pathname"
+        lightTheme       = "light"
+        darkTheme        = "dark_dimmed"
+        reactionsEnabled = 1
+        emitMetadata     = 0
+        inputPosition    = "top"
+        lang             = "zh-CN"
+        strict           = 0
+        loading          = "lazy"
